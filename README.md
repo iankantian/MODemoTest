@@ -88,6 +88,7 @@ I put a video with the id's and classes of the videojs, Fixed some style problem
 Now, let us get to work!
 The code snippet above doesn't do anything to the console, certainly no behavior changes to the index.html.
 When you do a project search (case SenSiTive) for vastClient it takes you to the videojs_5.vast.vpaid.js code:
+
 ```javascript
 require('./plugin/components/ads-label_5');
 require('./plugin/components/black-poster_5');
@@ -99,27 +100,6 @@ You can also configure the vast plugin using the data-setup attribute.  I copied
 But that means a return to the MailOnline demo just to have MVP.  So, I'll remove the copied stuff, commit and merge back to Master.
 Plan is to return to the MailOnline demo as MVP and add mid-roll ability to it.  
 
-```html
-<video id="example_video_1" class="video-js vjs-default-skin"
-    controls preload="auto" width="640" height="264"
-    poster="http://vjs.zencdn.net/v/oceans.png"
-    data-setup='{
-      "plugins": {
-      "vastClient": {
-        "adTagUrl": "http://pubads.g.doubleclick.net/gampad/ads?env=....",
-        "adsCancelTimeout": 5000,
-        "adsEnabled": true
-        }
-      }
-    }'>
-  <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'/>
-  <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
-  <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg'/>
-  <p class="vjs-no-js">
-    To view this video please enable JavaScript, and consider upgrading to a web browser that
-    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-  </p>
-</video>
-```
+Will return to this repo later.  Digging deeper into the MailOnline Demo a bit.
 
 ---
