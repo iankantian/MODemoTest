@@ -33,6 +33,9 @@ or
 <!-- Common -->
 <link href="/path/to/videojs.vast.vpaid.min.css" rel="stylesheet">
 ```
+so in my build I'm using:
+<link href="styles/videojs.vast.vpaid.css" rel="stylesheet">
+
 and the videojs version specific plugin
 ```html
 <!-- Video.js 4 -->
@@ -43,6 +46,10 @@ or
 <!-- Video.js 5 -->
 <script src="/path/to/videojs_5.vast.vpaid.min.js"></script>
 ```
+in my build:
+<script src="js/videojs_5.vast.vpaid.js"></script>
+Be AWARE.  It is at this point your browser terminal will Warn:
+video.js:18568VIDEOJS: WARN: Constructor logic via init() is deprecated; please use constructor() instead.  So theres some legacy code somewhere in there... not fixing, just moving on!
 
 if you need to support older browsers that don't support ES5 add this to your page before the plugin script
 ```html
@@ -52,6 +59,7 @@ if you need to support ie8 add this after the es5-shim.js script
 ```html
 <script src="/path/to/ie8fix.js"></script>
 ```
+I'm adding both now so I don't forget later.  But my grandma, when she was still alive was using fully updated Chrome, so, people get with the program!
 
 **4- Create you own ads plugin to pass an add media tag to the plugin**
 
