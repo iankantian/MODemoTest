@@ -14,7 +14,7 @@ Following the recipe for using their plugin and adding notes along the way:
 To integrate the plugin with videoJs you need to:
 
 **1- Add [all files from MailOnline/videojs-vast-vpaid/RELEASE/bin](https://github.com/MailOnline/videojs-vast-vpaid/tree/RELEASE/bin) to some path in your server**
-
+You know, 'some path'.  What I'm going to do is put these into some path**s**.  *.css is going into a style folder, *.js is going into the js folder, and that binary is going into the... bin folder.
 **2- If you don't have videoJs, add it's scripts and stylesheet to your page**
 ```html
 <!-- Video.js 4 -->
