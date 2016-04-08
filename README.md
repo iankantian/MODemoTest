@@ -84,6 +84,23 @@ videojs.plugin('ads-setup', function (opts) {
     });
 });
 ```
+We can't use this code yet, until we have a videojs object.  No need to get creative.  Here's what I got from http://videojs.com/getting-started/ but modified for my environment.
+```javascript
+    <video id="player" class="video-js vjs-default-skin" controls preload="auto" width="624" height="360"
+           poster="http://flowplayer.org/media/img/demos/playlist/railway_station.jpg">
+        <source src="http://stream.flowplayer.org/night3/640x360.mp4" type="video/mp4">
+        <source src="http://stream.flowplayer.org/night3/640x360.webm" type="video/webm">
+        <source src="http://stream.flowplayer.org/night3/640x360.ogv" type="video/ogg">
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+```
+Hmm... Missing a style for the videojs!  Not part of MVP but without the style sheet your videojs falls back to boring HTML5 video tag.
+```html
+
+```
 
 You can also configure the vast plugin using the data-setup attribute
 

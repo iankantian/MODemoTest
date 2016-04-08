@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VAST version="2.0">
+    <Ad id="vendri">
+        <InLine>
+            <AdSystem version="3.1">Vungle</AdSystem>
+            <AdTitle>Vungle Test Ad</AdTitle>
+            <Impression></Impression>
+            <Creatives>
+                <Creative sequence="1">
+                    <Linear>
+                        <Duration>00:00:15</Duration>
+                        <MediaFiles>
+                            <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="8533" width="1920" height="1080">
+                                <![CDATA[http://vendri.com/test/assets/Zeptolab_KingofThieves_EN_150216_Vungle.mp4]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+
+                <Creative sequence="1">
+                    <CompanionAds>
+                        <Companion width="960" height="883">
+                            <StaticResource creativeType="image/jpeg"><![CDATA[http://vendri.com/test/assets/KingOfThieves_portrait.jpg]]></StaticResource>
+                        </Companion>
+                        <Companion width="350" height="350">
+                            <StaticResource creativeType="image/jpeg"><![CDATA[http://vendri.com/test/assets/icon350x350.jpeg]]></StaticResource>
+                        </Companion>
+                        <Companion width="1280" height="614">
+                            <StaticResource creativeType="image/jpeg"><![CDATA[http://vendri.com/test/assets/KingOfThieves_landscape.jpg]]></StaticResource>
+                        </Companion>
+                    </CompanionAds>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>

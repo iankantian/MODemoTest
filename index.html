@@ -1,18 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>MVP of Vjs Vast Vpaid</title>
-
+    <meta charset="utf-8"/>
+    <title>MVP vast vpaid</title>
 
     <link href="http://vjs.zencdn.net/5.4.6/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/5.4.6/video.js"></script>
+    <link href="styles/main.css" rel="stylesheet">
     <link href="styles/videojs.vast.vpaid.css" rel="stylesheet">
     <script src="js/videojs_5.vast.vpaid.js"></script>
     <script src="js/es5-shim.js"></script>
     <script src="js/ie8fix.js"></script>
+
 </head>
 <body>
+
+<div class="example-video-container">
+    <p class="description">The Video</p>
+    <video id="player" class="video-js vjs-default-skin" controls preload="auto" width="624" height="360"
+           poster="http://flowplayer.org/media/img/demos/playlist/railway_station.jpg"
+           data-setup=''>
+        <source src="http://stream.flowplayer.org/night3/640x360.mp4" type="video/mp4">
+        <source src="http://stream.flowplayer.org/night3/640x360.webm" type="video/webm">
+        <source src="http://stream.flowplayer.org/night3/640x360.ogv" type="video/ogg">
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+    <h1></h1>
+    <!--<button type="button" data-action="prev" id="previous">Previous</button>-->
+    <!--<button type="button" data-action="next" id="next">Next</button>-->
+    <button type="button" data-action="play" id="play">Play</button>
+</div>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
