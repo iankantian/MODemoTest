@@ -34,7 +34,9 @@ or
 <link href="/path/to/videojs.vast.vpaid.min.css" rel="stylesheet">
 ```
 so in my build I'm using:
+```html
 <link href="styles/videojs.vast.vpaid.css" rel="stylesheet">
+```
 
 and the videojs version specific plugin
 ```html
@@ -47,7 +49,9 @@ or
 <script src="/path/to/videojs_5.vast.vpaid.min.js"></script>
 ```
 in my build:
+```html
 <script src="js/videojs_5.vast.vpaid.js"></script>
+```
 Be AWARE.  It is at this point your browser terminal will Warn:
 video.js:18568VIDEOJS: WARN: Constructor logic via init() is deprecated; please use constructor() instead.  So theres some legacy code somewhere in there... not fixing, just moving on!
 
