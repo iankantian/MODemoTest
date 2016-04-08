@@ -1,15 +1,6 @@
 /**
  * Created by joshuabrown on 4/1/16.
  */
-var player = videojs('player');
-var playerNext = document.getElementById( 'next' );
-var playerPrevious = document.getElementById( 'previous' );
-var playerPlay = document.getElementById( 'play' );
-playerPlay.addEventListener('click', function(){
-    player.play();
-    // console.log( player.prev() );
-});
-
 videojs.plugin('ads-setup', function (opts) {
     var player = this;
     var adsCancelTimeout = 3000;
@@ -22,4 +13,13 @@ videojs.plugin('ads-setup', function (opts) {
         adCancelTimeout: adsCancelTimeout,
         adsEnabled: !!options.adsEnabled
     });
+});
+
+var player = videojs('player');
+var playerNext = document.getElementById( 'next' );
+var playerPrevious = document.getElementById( 'previous' );
+var playerPlay = document.getElementById( 'play' );
+playerPlay.addEventListener('click', function(){
+    player.play();
+    // console.log( player.prev() );
 });

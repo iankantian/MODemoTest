@@ -84,9 +84,20 @@ videojs.plugin('ads-setup', function (opts) {
     });
 });
 ```
-I put a video with the id's and classes of the videojs, Fixed some style problems that came up.  Now it stable state so now will start branches.  Until I merge later you'll have to follow with the branches of git!
-
-You can also configure the vast plugin using the data-setup attribute
+I put a video with the id's and classes of the videojs, Fixed some style problems that came up.  Now it stable state so now will start branches.
+Now, let us get to work!
+The code snippet above doesn't do anything to the console, certainly no behavior changes to the index.html.
+When you do a project search (case SenSiTive) for vastClient it takes you to the videojs_5.vast.vpaid.js code:
+```javascript
+require('./plugin/components/ads-label_5');
+require('./plugin/components/black-poster_5');
+var videoJsVAST = require('./plugin/videojs.vast.vpaid');
+videojs.plugin('vastClient', videoJsVAST);
+```
+I am suspicious of those directory references in the require invocation.  I don't have a plugin/components folder.  Does the MailOnline demo have those? Yes, in scripts folder, which also houses the ads
+You can also configure the vast plugin using the data-setup attribute.  I copied it in from the working demo.  However, I still can't see any change on the console or network logs.  What's really worrisome is that the code that require code is generated during some sort of damn environment build.  'require' is a Browserify thingy, to give 'require' to client side apps.
+But that means a return to the MailOnline demo just to have MVP.  So, I'll remove the copied stuff, commit and merge back to Master.
+Plan is to return to the MailOnline demo as MVP and add mid-roll ability to it.  
 
 ```html
 <video id="example_video_1" class="video-js vjs-default-skin"
