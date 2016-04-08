@@ -84,7 +84,7 @@ videojs.plugin('ads-setup', function (opts) {
     });
 });
 ```
-I put a video with the id's and classes of the videojs, 
+I put a video with the id's and classes of the videojs, Fixed some style problems that came up.  Now it stable state so now will start branches.  Until I merge later you'll have to follow with the branches of git!
 
 You can also configure the vast plugin using the data-setup attribute
 
